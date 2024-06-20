@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"erc20_token.sol": "ERC20Token2"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"erc20_token.sol": {
+			"keccak256": "0x922be1347ca5b507c73b1a066f724f70e8495f519e76c3f2df2359ef26b48151",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://42bce32299a686b4d87b8982f00f5f7b914b811cc3bb3b919065685b66a671e0",
+				"dweb:/ipfs/QmfDTivw22mNBfP5yTzeCDMERKrgxAKTHQZ1Ja4y5bYvAh"
+			]
+		}
+	},
+	"version": 1
+}

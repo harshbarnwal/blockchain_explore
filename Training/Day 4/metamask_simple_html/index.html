@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <title>Voting Election App</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/election.js"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+        type="application/javascript"></script>
+    <!-- Minified -->
+    
+    <meta name="description" content="Voting Election App">
+    <meta name="keywords" content="Voting Election App">
+
+    <!-- Mobile viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+        integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS-->
+    <!-- Google web fonts. You can get your own bundle at http://www.google.com/fonts. Don't forget to update the CSS accordingly!-->
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif|Ubuntu' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="js/flexslider/flexslider.css">
+    <link rel="stylesheet" href="css/basic-style.css">
+
+    <!-- end CSS-->
+
+    <!-- JS-->
+    <script src="js/libs/modernizr-2.6.2.min.js"></script>
+
+</head>
+
+<body>
+    <header class="wrapper clearfix">
+
+        <div id="banner">
+           <h2> Blockchain Ethers App Demo</h2>
+        </div>
+
+    </header><!-- end header -->
+ 
+
+
+    <div style="margin-left: 5%;">
+        <section id="content">
+
+            <button id="connect">connect metamask wallet - nothing works without that</button><br /><br />            
+
+            <hr />
+            <h3>Get Account Balance</h3>
+
+           Status: <div id="status"></div>
+
+            <button id="get_status">get status</button><br /><br />
+
+
+            <hr />  
+            <h3>Add Candidates</h3>
+
+            <input id="candidate_name" placeholder="Candidate Name"><br />
+
+            <button id="add_candidate">Add Candidate</button><br /><br />
+
+            <hr />
+
+            <h3>Add Voter</h3>
+
+            <input id="voter_wallet" placeholder="Voter wallet Address"><br />
+
+            <button id="add_voter">Add Voter</button><br /><br />
+
+            <hr />
+            
+            
+            <h3>Get Candidate List </h3>
+            Candidates: <div id="candidates"></div>
+            <div id="candidate_buttons"></div>
+            <button id="get_list">get list</button><br /><br />
+            <hr />
+            <h3>Start Election</h3>
+           
+            <button id="start">start</button>
+            <br /><br />
+
+            <hr />
+            <h3>Vote</h3>
+            <input id="candidate_name_to_vote" placeholder="candidate name"><br />
+            <div id="error"></div>
+            <!--<button id="vote">vote</button><br /><br />-->
+
+
+            <hr />
+            <h3>Get current leader</h3>
+            Leader: <div id="leader"></div>
+            <button id="get_leader">get leader</button><br /><br />
+            <hr />
+            <h3>end Election</h3>
+           
+            <button id="end">end</button>
+            <br /><br />
+            <hr />
+            <h3>Get Winner</h3>
+            Winner: <div id="winner"></div>
+            <button id="get_winner">Get Winner</button>
+            <hr />
+            <br /><br />
+            <hr />
+            <h3>Restart Election</h3>
+            
+            <button id="restart">Restart</button>
+
+            <button id="sign">Sign</button>
+
+
+            <hr />
+        </section>
+    </div>
+    <footer>
+    </footer><!-- #end footer area -->
+</body>
+
+</html>
